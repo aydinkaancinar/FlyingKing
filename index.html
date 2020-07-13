@@ -57,13 +57,15 @@
       }
   
       .image_edit {
-        padding: 10px;
         margin: auto;
         height: 200px;
         width: 300px;
-        left: 50%;
-        transform: translate(-50%, 0%);
       }
+      
+      .instruction {
+        color: white;
+      }
+      
     </style>
   </head>
   <body style="background-color:black;">
@@ -75,6 +77,9 @@
     <div class='flex-parent'>
       <div class='flex-child'>
         <img class = "image_edit" src="FlyingKingLogo.png" alt="GameLogo">
+        <p class = instruction> Press <b> Space </b> to fly </p>
+        <p class = instruction> Press <b> A </b> to shoot </p>
+        <p class = instruction> Press <b> S </b> for explosion </p>
       </div>
       <div class='flex-child'>
         <div class = "center" id="unityContainer"></div> 
