@@ -8,63 +8,77 @@
     <script>
       UnityLoader.instantiate("unityContainer", "Build/FlyingKingWeb.json");
     </script>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+      
+      .center {
+        padding: 0px;
+        position: absolute;
+        margin: auto;
+        height: 600px;
+        width: 360px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
   
-  .center {
-  padding: 0px;
-    position: absolute;
-    margin: auto;
-    height: 600px;
-    width: 360px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
+      .flex-parent {
+        display: flex;
+      }
   
-  .image_edit {
-  padding: 0px;
-    margin: auto;
-    height: 200px;
-    width: 300px;
-}
+      .flex-child {
+        flex: 1;
+      }
   
-</style>
-</head>
-<body style="background-color:black;">
-
-<div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="contact.html">Contact</a>
-  <a href="privacy_policy.html">Privacy Policy</a>
-</div>  
- <img class = "image_edit" src="FlyingKingLogo.png" alt="GameLogo">
- <div class = "center" id="unityContainer"></div> 
-</body>
+      .image_edit {
+        padding: 0px;
+        margin: auto;
+        height: 200px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body style="background-color:black;">
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy_policy.html">Privacy Policy</a>
+    </div>  
+    <div class='flex-parent'>
+      <div class='flex-child'>
+        <img class = "image_edit" src="FlyingKingLogo.png" alt="GameLogo">
+      </div>
+      <div class='flex-child'>
+        <div class = "center" id="unityContainer"></div> 
+      </div>
+      <div class='flex-child'>
+      </div>
+    </div>
+  </body>
 </html>
