@@ -57,10 +57,12 @@
       }
   
       .image_edit {
-        padding: 0px;
+        padding: 10px;
         margin: auto;
         height: 200px;
         width: 300px;
+        left: 50%;
+        transform: translate(-50%, 0%);
       }
     </style>
   </head>
@@ -73,6 +75,9 @@
     <div class='flex-parent'>
       <div class='flex-child'>
         <img class = "image_edit" src="FlyingKingLogo.png" alt="GameLogo">
+        <p> Press <b> Space </b> to fly </p>
+        <p> Press <b> A </b> to shoot </p>
+        <p> Press <b> S </b> for explosion </p>
       </div>
       <div class='flex-child'>
         <div class = "center" id="unityContainer"></div> 
