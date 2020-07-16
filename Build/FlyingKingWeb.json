@@ -1,7 +1,7 @@
 {
 "companyName": "KaanCinar",
 "productName": "Flying King",
-"productVersion": "0.1",
+"productVersion": "0.3",
 "dataUrl": "FlyingKingWeb.data.unityweb",
 "wasmCodeUrl": "FlyingKingWeb.wasm.code.unityweb",
 "wasmFrameworkUrl": "FlyingKingWeb.wasm.framework.unityweb",
