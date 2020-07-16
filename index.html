@@ -73,11 +73,22 @@
         display: block;
       }
       
-      @media only screen and (max-width: 500px){
-        .mobilehidden{
-          display = none;
-        }
-      } 
+      .mobileShow {display: none;}
+      /* Smartphone Portrait and Landscape */
+      @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){ 
+          .mobileShow {display: inline;}
+      }
+      
+      .mobileHide { display: inline; }
+      /* Smartphone Portrait and Landscape */
+      @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){
+          .mobileHide { display: none;}
+      }
+      
     </style>
   </head>
   <body style="background-color:black;">
@@ -86,7 +97,7 @@
       <a href="contact.html">Contact</a>
       <a href="privacy_policy.html">Privacy Policy</a>
     </div>  
-    <div class=" mobilehidden">
+    <div class= "mobileHide">
       <div class='flex-parent'>
         <div class='flex-child'>
           <span class="img-container">
@@ -100,6 +111,18 @@
         <div class='flex-child'>
           <div class = "center" id="unityContainer"></div> 
         </div>
+        <div class='flex-child'>
+          <span class="img-container">
+            <img class = "image_edit" src="FlyingKingLogo.png" alt="GameLogo">
+          </span>
+          <style> p {text-align: center;} </style>
+          <p><a href="https://apps.apple.com/us/app/flying-king/id1519987964?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-07-14&kind=iossoftware&bubble=apple_music) no-repeat;width:135px;height:40px;"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mobileShow">
+      <div class='flex-parent'>
         <div class='flex-child'>
           <span class="img-container">
             <img class = "image_edit" src="FlyingKingLogo.png" alt="GameLogo">
