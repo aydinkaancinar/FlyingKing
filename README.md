@@ -6,3 +6,5 @@ Download:
 [App Store](https://apps.apple.com/us/app/flying-king/id1519987964?mt=8)  
 [Google Play](https://play.google.com/store/apps/details?id=com.KaanCinar.FlyingKing&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)  
 [Play on Desktop](https://aydinkaancinar.github.io/FlyingKing)
+
+![alt text](Banner.png)
